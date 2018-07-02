@@ -3,7 +3,7 @@ ANACONDA에서 PsychoPy 작업을 위해 필요한 것들.
 1) 아나콘다 설치 (ver. 3.6)
 2) 아나콘다 내 작업 환경(environment) 구축
 3) 필요 패키지 설치
-4) import + window만들어서 확인해보기
+4) import + window만들어서 확인해보기 (<- 다음 장에서)
 
 
 1) [Anaconda](Anaconda.com) 설치
