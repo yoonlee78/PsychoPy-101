@@ -3,14 +3,14 @@ ANACONDA에서 PsychoPy 작업을 위해 필요한 것들.
 1) 아나콘다 설치 (ver. 3.6)
 2) 아나콘다 내 작업 환경(environment) 구축
 3) 필요 패키지 설치
-4) import + window만들어서 확인해보기 (<- 다음 장에서)
+4) import + window만들어서 확인해보기 (<- 다음 회차에서)
 
 
 1) [Anaconda](Anaconda.com) 설치
 
 2) 아나콘다 내 작업 환경 구축
 
-두 가지 방법이 있습니다. 하나는 <br>
+두 가지 방법이 있습니다. 하나는 
   1) 아나콘다 네비게이터 > 왼쪽 코너 탭에서 **"Environments"** ("Home" 밑에 위치) > "Create" > Name에는 환경 이름 지정해주세요. <br>
   저는 우선 "PsychoPy"라고 지을게요. Packages 선택에는 Python 2.7로 해주세요. (3.6버전이 출시되긴했으나 안정성을 위해 당분간은 2.7로 유지하는걸로..)
   
@@ -64,6 +64,5 @@ conda install jupyter notebook
 
 설치 확인은 바로 activate을 해보거나 safe하게 conda info --envs로 체크!
 
------ 환경 구성은 여기까지 입니다. 이제 주피터 노트북으로 들어가서 방금 설치한 psychopy 라이브러리와 그 외 필요한 라이브러리를 불러올 거에요(import)
-다음 장에서 계속! ---- 
+----- 환경 구성은 여기까지 입니다. 이제 주피터 노트북으로 들어가서 방금 설치한 psychopy 라이브러리와 그 외 필요한 라이브러리를 불러올 거에요(import) (다음 회차에서 계속) ---- 
 
