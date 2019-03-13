@@ -1,0 +1,469 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Py-Emotion 스터디 3회차 _ Psychopy\n",
+    "\n",
+    "### _코알못 심리학도를 위한 실험 설계 101_\n",
+    "\n",
+    "#### presented by Y.Lee\n",
+    "\n",
+    "###### 2018년 5월 8일\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 1. 초기 셋업 (필수 코드!)\n",
+    "\n",
+    "import와 윈도우(화면) 생성\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ModuleNotFoundError",
+     "evalue": "No module named 'psychopy'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m-----------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mModuleNotFoundError\u001b[0m             Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-3-f3323107a54b>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mmath\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mnumpy\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mrandom\u001b[0m \u001b[0;31m#to have handy system and math functions\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 4\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0mpsychopy\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mcore\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mevent\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mvisual\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mgui\u001b[0m \u001b[0;31m#these are the PsychoPy modules\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      5\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[0mmyWin\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mvisual\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mWindow\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mvisual\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mWindow\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcolor\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m'white'\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0munits\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m'pix'\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0msize\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1000\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m1000\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mallowGUI\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;32mFalse\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mfullscr\u001b[0m\u001b[0;34m=\u001b[0m \u001b[0;32mFalse\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mModuleNotFoundError\u001b[0m: No module named 'psychopy'"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "import math, numpy, random #to have handy system and math functions\n",
+    "\n",
+    "from psychopy import core, event, visual, gui #these are the PsychoPy modules\n",
+    "\n",
+    "myWin=visual.Window = visual.Window(color='white',units='pix',size=[1000,1000], allowGUI = False, fullscr= False)\n",
+    "\n",
+    "myClock = core.Clock() #this creates and starts a clock which we can later read\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ModuleNotFoundError",
+     "evalue": "No module named 'psychopy'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m-----------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mModuleNotFoundError\u001b[0m             Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-4-126954d4b6e7>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0;32mimport\u001b[0m \u001b[0mpsychopy\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mModuleNotFoundError\u001b[0m: No module named 'psychopy'"
+     ]
+    }
+   ],
+   "source": [
+    "import psychopy"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 2-1. 새 오브젝트 생성 (실험 재료 준비)\n",
+    "\n",
+    "##### 1) 좌측 원(diskLeft)이랑 우측 원(diskRight) 정의"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "#좌측 안쪽 원과 우측 안쪽 원 정의\n",
+    "\n",
+    "#class visual.Circle()\n",
+    "#제시할창('myWin')\n",
+    "#원의 반지름\n",
+    "#원의 화면상 위치\n",
+    "#원 테두리 폭\n",
+    "#원 색깔\n",
+    "#원 테두리 색깔\n",
+    "\n",
+    "diskLeft = visual.Circle(myWin, radius=40, pos=[-200,0], lineWidth=2.5, \n",
+    "                         fillColor='red', lineColor=None)\n",
+    "diskRight = visual.Circle(myWin, radius=40, pos=[200,0], lineWidth=2.5, \n",
+    "                          fillColor='red', lineColor=None)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##### 2) 좌측 바깥원과 우측 바깥원 정의"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "# 좌측 바깥원과 우측 바깥원 정의\n",
+    "\n",
+    "#class visual.Circle()\n",
+    "#제시할창('myWin')\n",
+    "#원의 반지름\n",
+    "#원의 화면상 위치\n",
+    "#원 테두리 폭\n",
+    "#원 색깔\n",
+    "#원 테두리 색깔\n",
+    "\n",
+    "ringLeft = visual.Circle(myWin, radius=48, pos=[-200,0], lineWidth=2.5, \n",
+    "                         fillColor=None, lineColor='black')\n",
+    "ringRight = visual.Circle(myWin, radius=140, pos=[200,0], lineWidth=2.5, \n",
+    "                          fillColor=None, lineColor='black')\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 2-2. The Controller! (컨트롤러 정의)\n",
+    "\n",
+    "The next two lines are similar to those used in Kanizsa.py because they create the controller and _'the text with information'_(문자기반 피드백 역할을 함) about the value changed by the controller. \n",
+    "\n",
+    "The controller will change the size of the disk on the right. As the disks start off with a radius of 40 pixels, the controller will let us go as low as 20 and as high as 60 pixels. This way we will make the two disks different in size (their real size) to see when they are perceived as the same (their perceived size). Psychologists refer to this match as the **point of subjective equality**\n",
+    "\n",
+    "[구글 번역] 컨트롤러가 오른쪽의 디스크 크기를 변경합니다. 디스크가 반경 40 픽셀로 시작되면 제어기는 우리가 20에서 60 픽셀만큼 내려 가게합니다. 이 방법으로 우리는 두 개의 디스크가 서로 다른 크기 (실제 크기)로 만들어지면 동일한 디스크 (지각 된 크기)로 인식합니다. 심리학자들은이 시합을 주관적 평등의 포인트라고 부릅니다."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##### 1) 평정 척도(myScale) 정의"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "#평정 척도('myScale') 정의 #Ponzo 때와 동일\n",
+    "\n",
+    "#class visual.RatingScale \n",
+    "#제시할 창('myWin')\n",
+    "#위치(pos)\n",
+    "#최저점과 최고점(low,high)\n",
+    "#문자크기(textSize)\n",
+    "#선 색깔(lineColor)\n",
+    "\n",
+    "\n",
+    "myScale = visual.RatingScale(myWin, pos=[0, -360], low=20, high=60,  textSize=0.5, \n",
+    "                             lineColor='black',  tickHeight=False, scale=None, showAccept=False, singleClick=True)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##### 2) 숫자지표(information)정의"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "#숫자지표('information') #Ponzo 때와 동일\n",
+    "\n",
+    "#class visual.TextStim\n",
+    "#위치(pos)\n",
+    "#text (#여기서 text는 가변적인 정보이므로 빈칸?)\n",
+    "#높이(height)\n",
+    "#색깔(color)\n",
+    "\n",
+    "information=visual.TextStim(myWin, pos=[0,-385], text='', height=18, color='black')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 4. 실험 설계"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 1) standardRaidus 변수 생성\n",
+    "\n",
+    "We could now start the loop. But we are going to place the standard radius size of 40 pixels into a variable, and reset our disks to that value.\n",
+    "\n",
+    "```python\n",
+    "standardRadius = 40.\n",
+    "diskLeft.setRadius(standardRadius)\n",
+    "diskRight.setRadius(standardRadius)\n",
+    "``` \n",
+    "\n",
+    "This may seem unnecessary, but it has two advantages. One is to give a clear name to our standardRadius. The other is that **if at some point you want to experiment with a different\n",
+    "radius you can just change the value of this variable on this line of the script.**\n",
+    "\n",
+    "[구글 번역 +의역] \n",
+    "이것은 불필요한 것처럼 보일 수 있지만 두 가지 이점이 있습니다. 하나는 'standardRadius'라는 명확한 이름을 부여하는 것입니다.. 다른 점은 ** 어떤 시점에서 다른 실험을하고 싶다면 radius를 사용하면 스크립트의 이 줄에서 이 변수의 값만 변경하면 되는 것이죠! **\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2) 컨트롤러 업데이트 \n",
+    "\n",
+    "Now let’s update the loop that uses the controller to change the size of the right disk.\n",
+    "\n",
+    "```python \n",
+    "if myScale.noResponse == False: #some new value has been selected with the mouse\n",
+    "→ size = myScale.getRating()\n",
+    "→ percentage = (size - standardRadius) / standardRadius * 100\n",
+    "→ information.setText(str(percentage) + \"%\")\n",
+    "→ diskRight.setRadius(size)\n",
+    "→ myScale.reset()\n",
+    "```\n",
+    "\n",
+    "We have done something slightly different here. The value that is returned by\n",
+    "myScale.getRating() is placed in a variable called size, and we use setRadius to change the disk to that new radius. But we are not going to display size in pixels. It is more interesting to display the difference between the left and the right disk.\n",
+    "\n",
+    "[구글번역+의역]\n",
+    "\n",
+    "우리는 여기서 약간 다른 걸 시도해보았습니다. myScale.getRating()에 의해 반환되는 값\n",
+    "은 size라는 변수에 저장되며 setRadius를 사용하여 디스크의 크기를 조작할 것입니다. 그러나 픽셀 단위로 크기를 표시하지는 않습니다. **왼쪽과 오른쪽 디스크의 차이를 표시하는 것이 더 재미 있기때문이죠!**\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "\n",
+    "The size of the disk on the left, which does not change within the loop and is therefore the comparison size, is what we called standardRadius. In our program this radius is 40 pixels. We therefore take a difference from our new value and the standardRadius.\n",
+    "\n",
+    "This is the difference in pixels. Then we divide it by standardRadius to get a proportion, if the new size is, say, 50, then 50 minus 40 is 10 and 10 / 40 is 0.25. The new disk size is 25% bigger than the comparison. To express this as a percentage we have to multiply the proportion by 100 as a fi nal step.\n",
+    "\n",
+    "\n",
+    "[구글 번역 + 의역]\n",
+    "\n",
+    "루프 내에서 크기가 변경되지 않으므로, 왼쪽의 디스크 크기는 우리가 standardRadius(라고 부르고)에 입력해준 상대적 크기입니다. 우리 프로그램에서 이 반지름은 40 픽셀입니다. 그러므로 우리는 새로운 가치와 standardRadius와 차이 크기를 구해봅시다.\n",
+    "\n",
+    "아래는 각 픽셀(크기)간의 차이입니다. 그런 다음 standardRadius로 나누어 비율을 얻습니다. 예를 들어, *새 크기가 50이면 50에서 40을 뺀 값이 10일 것이고, 10/40이 0.25가됩니다.* 따라서, 새 디스크(안쪽 원) 크기는 이전의 것과 비교해보았을 때, 25 % 더 큽니다. 이것을 백분율로 표현하려면 최종 비율로 비율을 100으로 곱해야합니다.(아래 코드와 같이요!) \n",
+    "\n",
+    "\n",
+    "```python\n",
+    "percentage = (size - standardRadius) / standardRadius * 100\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 두 원의 크기 차이를 백분율로 나타내기\n",
+    "\n",
+    "_In particular when size will be smaller than 40 you will get negative values. This tells us that the new size is smaller than the standard by that percentage value. For example, a value of 30 will be 25% smaller than the standard.\n",
+    "We will display this percentage underneath our controller. This way we will always immediately see the relative difference between the two disks._\n",
+    "\n",
+    "[구글 번역]\n",
+    "\n",
+    "특히 크기가 40보다 작으면 **음의 값**을 얻게됩니다. 이것은 새로운 크기가 그 백분율 값에 의해 표준보다 작다는 것을 말해줍니다. 예를 들어 값 30은 표준보다 25 % 작을 것입니다.\n",
+    "이 비율은 우리 컨트롤러 아래에 표시됩니다. 이렇게하면 두 디스크 간의 상대적인 차이를 즉시 알 수 있습니다.\n",
+    "\n",
+    "```python\n",
+    "information.setText(str(percentage) + \"%\")\n",
+    "```\n",
+    "\n",
+    "_Note how we made use of something else that we had discussed in Chapter 2. We\n",
+    "can add strings together using the + sign . _So here we are going to show the percentage with a % sign after it._\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 키 입력\n",
+    "#### event.key()\n",
+    "#### 'esc' 할당\n",
+    "\n",
+    "_As before, pay attention to the indentations. Note also that we have changed slightly the way we check whether the ESC was pressed. The result of event.getKeys is stored in a variable called **pressedList**._\n",
+    "\n",
+    "What we get is a list, because that is how **event.getKeys** works. Next we check that this list is not empty, and if there is something inside we check whether the first element in the list (index 0) was the key 'escape'.\n",
+    "\n",
+    "In this case it could not possibly be anything else, so this is a bit of an overkill.\n",
+    "\n",
+    "It cannot be anything else because we had specified **keyList = ['escape']**. The way getKeys work is that it returns something only if the input from the keyboard is in the keylist. \n",
+    "\n",
+    "The reason we are doing all of these changes is because in the future we may want to check for multiple keys. For now it is just an exercise in the use of if and len(). \n",
+    "\n",
+    "We also end this bit of script with **event.clearEvents()** . You can see this as similar to **myScale.reset()**; we are just making sure that we are ready to collect new information.\n",
+    "\n",
+    "[구글 번역]\n",
+    "\n",
+    "이전과 마찬가지로 들여 쓰기에주의하십시오. 또한 ESC가 눌려 졌는지 확인하는 방법을 약간 변경했습니다. event.getKeys의 결과는 ** pressedList ** 변수에 저장됩니다.\n",
+    "\n",
+    "** event.getKeys **가 작동하는 방식이므로 목록을 얻습니다. 다음으로 우리는이 목록이 비어 있지 않은지 확인하고, 내부에 무언가가있는 경우 목록의 첫 번째 요소 (인덱스 0)가 키 '이스케이프'인지 확인합니다.\n",
+    "\n",
+    "이 경우에는 다른 어떤 것도 될 수 없으므로 이것은 약간의 잔인한 행동입니다.\n",
+    "\n",
+    "** keyList = [ 'escape'] **를 지정 했으므로 다른 어떤 것도 될 수 없습니다. getKeys의 작동 방식은 키보드의 입력이 키 목록에있는 경우에만 무언가를 반환한다는 것입니다.\n",
+    "\n",
+    "이러한 모든 변경 작업을 수행하는 이유는 앞으로 여러 개의 키가 있는지 확인해야하기 때문입니다. 지금은 if와 len ()을 사용하는 것에 불과합니다.\n",
+    "\n",
+    "또한 ** event.clearEvents () **를 사용하여이 스크립트를 끝냅니다. ** myScale.reset () **과 비슷한 것으로 볼 수 있습니다. 우리는 새로운 정보를 수집 할 준비가되었는지 확인하고 있습니다."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 코드 실행"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1.1114 \tERROR \tavbin.dll failed to load. Try importing psychopy.visual\n",
+      "  as the first library (before anything that uses scipy)\n",
+      "  and make sure that avbin is installed.\n",
+      "1.2479 \tWARNING \tMonitor specification not found. Creating a temporary one...\n"
+     ]
+    },
+    {
+     "ename": "SystemExit",
+     "evalue": "0",
+     "output_type": "error",
+     "traceback": [
+      "An exception has occurred, use %tb to see the full traceback.\n",
+      "\u001b[1;31mSystemExit\u001b[0m\u001b[1;31m:\u001b[0m 0\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "C:\\Users\\Yoon_LGlaptop\\Anaconda2\\envs\\about_python_psychopy\\lib\\site-packages\\IPython\\core\\interactiveshell.py:2890: UserWarning: To exit: use 'exit', 'quit', or Ctrl-D.\n",
+      "  warn(\"To exit: use 'exit', 'quit', or Ctrl-D.\", stacklevel=1)\n"
+     ]
+    }
+   ],
+   "source": [
+    "#전체 코드 \n",
+    "\n",
+    "import math, numpy, random #handy system and math functions\n",
+    "from psychopy import core, event, visual, gui #these are the psychopy modules\n",
+    "\n",
+    "myWin = visual.Window(color='white', units='pix', size=[1000,1000], allowGUI=False, fullscr=False) #creates a window\n",
+    "myClock = core.Clock() #this creates and starts a clock which we can later read\n",
+    "\n",
+    "diskLeft = visual.Circle(myWin, radius=40, pos=[-200,0], lineWidth=2.5, fillColor='red', lineColor=None)\n",
+    "diskRight = visual.Circle(myWin, radius=40, pos=[200,0], lineWidth=2.5, fillColor='red', lineColor=None)\n",
+    "ringLeft = visual.Circle(myWin, radius=48, pos=[-200,0], lineWidth=2.5, fillColor=None, lineColor='black')\n",
+    "ringRight = visual.Circle(myWin, radius=140, pos=[200,0], lineWidth=2.5, fillColor=None, lineColor='black')\n",
+    "\n",
+    "myScale = visual.RatingScale(myWin, pos=[0, -360], low=20, high=60,  textSize=0.5, lineColor='black',  tickHeight=False, scale=None, showAccept=False, singleClick=True)\n",
+    "information=visual.TextStim(myWin, pos=[0,-385], text='', height=18, color='black') \n",
+    "\n",
+    "# the main loop\n",
+    "def mainLoop(): \n",
+    "    \n",
+    "    finished = False\n",
+    "    standardRadius = 40.\n",
+    "    diskLeft.setRadius(standardRadius)\n",
+    "    diskRight.setRadius(standardRadius)\n",
+    "    \n",
+    "    while not finished:\n",
+    "    \n",
+    "        diskLeft.draw()\n",
+    "        diskRight.draw()\n",
+    "\n",
+    "        ringLeft.draw()\n",
+    "        ringRight.draw()\n",
+    "    \n",
+    "        myScale.draw()\n",
+    "        information.draw()\n",
+    "        myWin.flip()\n",
+    "        \n",
+    "        if myScale.noResponse ==False: #some new value has been selected with the mouse\n",
+    "            size = myScale.getRating()\n",
+    "            percentage = (size-standardRadius) / standardRadius * 100\n",
+    "            information.setText(str(percentage) + \"%\")\n",
+    "            diskRight.setRadius(size)\n",
+    "            myScale.reset()\n",
+    "    \n",
+    "        pressedList =event.getKeys(keyList=['escape']) #pressing ESC quits the program\n",
+    "        if len(pressedList) >0:\n",
+    "            if pressedList[0] =='escape':\n",
+    "                finished =True\n",
+    "            event.clearEvents()\n",
+    "\n",
+    "mainLoop() #enters the main loop\n",
+    "myWin.close() #closes the window\n",
+    "core.quit() #quits\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
