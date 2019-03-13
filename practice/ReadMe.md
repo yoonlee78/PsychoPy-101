@@ -9,3 +9,5 @@
 
   - Erikson Flank Tasks
   - Corsi Block Task
+  - Go-NoGo Task
+  - Attentional Blink Task 
