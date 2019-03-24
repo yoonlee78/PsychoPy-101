@@ -1,3 +1,22 @@
+### 1. PsychoPy 3.0 Ver. 
+(as of 2018, PsychoPy 3.0.ver. is avaiable. 
+
+1. 설치 화면 : psychopy_install.ipynb
+
+- Useful Links
+  - http://www.psychopy.org/ - visit the website!
+
+  - http://psychopy.org/installation.html - for help with downloading.
+
+  - https://discourse.psychopy.org/ - For answers to questions and to ask questions! Write details about what you’ve done, when the problem arises, your OS/PsychoPy version. Also, copy-paste error messages and use the “this reply solves my problem” checkbox.
+
+  - http://www.psychopy.org/resources/workshops.html - PsychoPy official workshops for 2018
+
+  - https://twitter.com/psychopy - visit the twitter to ask the authors and other PsychoPy users your questions.
+
+
+### 2. PsychoPy 2.7 Ver. 
+
 ANACONDA에서 PsychoPy 작업을 위해 필요한 것들. 
 
 1) 아나콘다 설치 (ver. 3.6)
