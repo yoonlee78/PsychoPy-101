@@ -1,4 +1,4 @@
-### 1. PsychoPy 3.0 Ver. 
+### 1. PsychoPy 3.0 Ver. (python 3.5 and above)
 (as of 2018, PsychoPy 3.0.ver. is avaiable. 
 
 1. 설치 화면 (Anaconda) : psychopy_install.ipynb
@@ -16,7 +16,7 @@
   - https://twitter.com/psychopy - visit the twitter to ask the authors and other PsychoPy users your questions.
 
 
-### 2. PsychoPy 2.7 Ver. 
+### 2. PsychoPy 2.7 Ver. (python 2.7 and below)
 
 ANACONDA에서 PsychoPy 작업을 위해 필요한 것들. 
 
