@@ -34,7 +34,7 @@ _4) import + window만들어서 확인해보기 (<- 다음 회차에서)_
 (참고*) 두 가지 방법이 있습니다. 하나는 
   
   1) 아나콘다 네비게이터 > 왼쪽 코너 탭에서 **"Environments"** ("Home" 밑에 위치) > "Create" > Name에는 환경 이름 지정해주세요. <br>
-  저는 우선 "PsychoPy"라고 지을게요. Packages 선택에는 Python 2.7로 해주세요. (3.6버전이 출시되긴했으나 안정성을 위해 당분간은 2.7로 유지하는걸로..)
+  저는 우선 "PsychoPy"라고 지을게요. Packages 선택에는 Python 2.7로 해주세요. (3.0.ver을 쓰고 싶은 경우, Setup 폴더의 psychopy_install.ipynb에 나와있는 대로 하면 됩니다). 
   
   또는 
 
