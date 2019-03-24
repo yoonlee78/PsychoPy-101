@@ -24,6 +24,6 @@
 
 Best,
 
-Yoon Kyung Lee, 
-Ph.D. Program in Cognitive Psychology, 
-SNU 
+Yoon Kyung Lee, <br>
+Ph.D. Program in Cognitive Psychology, <br>
+SNU <br>
