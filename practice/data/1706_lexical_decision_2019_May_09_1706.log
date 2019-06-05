@@ -1,0 +1,105 @@
+9.1099 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x12fdb2898>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x12fc4a710>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([2560, 1600]), stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.1100 	EXP 	window1: recordFrameIntervals = False
+9.2745 	EXP 	window1: recordFrameIntervals = True
+9.4595 	EXP 	window1: recordFrameIntervals = False
+9.5761 	EXP 	Created Intro_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Intro_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.5807 	EXP 	Created text_show = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_show', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.5858 	EXP 	Created bye = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='bye', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.0093 	EXP 	Intro_text: text = 'Welcome!\nPress 1 for word,\nPress 0 for non-word\nTo start, press SPACE\n'
+10.0093 	EXP 	Intro_text: autoDraw = True
+10.4618 	DATA 	Keypress: space
+10.5012 	EXP 	Imported text_cond.xlsx as conditions, 14 conditions, 4 params
+10.5015 	EXP 	Created sequence: sequential, trialTypes=14, nReps=1, seed=None
+10.5018 	EXP 	New trial (rep=0, index=0): OrderedDict([('engText', 'desk'), ('Text', '책상'), ('CorrAns', 1), ('Cond', 'w')])
+10.5445 	EXP 	Intro_text: autoDraw = False
+10.5445 	EXP 	text_show: pos = array([0., 0.])
+10.5445 	EXP 	text_show: text = 'desk'
+10.5445 	EXP 	text_show: autoDraw = True
+11.3738 	EXP 	New trial (rep=0, index=1): OrderedDict([('engText', 'reng'), ('Text', '뱐지'), ('CorrAns', 0), ('Cond', 'nw')])
+11.4015 	DATA 	Keypress: 1
+11.4134 	EXP 	text_show: autoDraw = False
+11.4134 	EXP 	text_show: pos = array([0., 0.])
+11.4134 	EXP 	text_show: text = 'reng'
+11.4134 	EXP 	text_show: autoDraw = True
+11.6548 	EXP 	New trial (rep=0, index=2): OrderedDict([('engText', 'calm'), ('Text', '치마'), ('CorrAns', 1), ('Cond', 'w')])
+11.6806 	DATA 	Keypress: 0
+11.6945 	EXP 	text_show: autoDraw = False
+11.6945 	EXP 	text_show: pos = array([0., 0.])
+11.6945 	EXP 	text_show: text = 'calm'
+11.6945 	EXP 	text_show: autoDraw = True
+11.7720 	EXP 	New trial (rep=0, index=3): OrderedDict([('engText', 'skai'), ('Text', '연어'), ('CorrAns', 0), ('Cond', 'w')])
+11.8027 	DATA 	Keypress: 1
+11.8271 	EXP 	text_show: autoDraw = False
+11.8271 	EXP 	text_show: pos = array([0., 0.])
+11.8271 	EXP 	text_show: text = 'skai'
+11.8271 	EXP 	text_show: autoDraw = True
+11.8402 	DATA 	Keypress: 0
+11.8710 	EXP 	New trial (rep=0, index=4): OrderedDict([('engText', 'moon'), ('Text', '다리'), ('CorrAns', 1), ('Cond', 'w')])
+11.9104 	EXP 	text_show: autoDraw = False
+11.9104 	EXP 	text_show: pos = array([0., 0.])
+11.9104 	EXP 	text_show: text = 'moon'
+11.9104 	EXP 	text_show: autoDraw = True
+11.9913 	EXP 	New trial (rep=0, index=5): OrderedDict([('engText', 'phur'), ('Text', '러개'), ('CorrAns', 0), ('Cond', 'nw')])
+12.0199 	DATA 	Keypress: 1
+12.0223 	DATA 	Keypress: 0
+12.0434 	EXP 	text_show: autoDraw = False
+12.0434 	EXP 	text_show: pos = array([0., 0.])
+12.0434 	EXP 	text_show: text = 'phur'
+12.0434 	EXP 	text_show: autoDraw = True
+12.0546 	EXP 	New trial (rep=0, index=6): OrderedDict([('engText', 'deer'), ('Text', '사슴'), ('CorrAns', 1), ('Cond', 'w')])
+12.0933 	EXP 	text_show: autoDraw = False
+12.0933 	EXP 	text_show: pos = array([0., 0.])
+12.0933 	EXP 	text_show: text = 'deer'
+12.0933 	EXP 	text_show: autoDraw = True
+12.2052 	EXP 	New trial (rep=0, index=7): OrderedDict([('engText', 'quit'), ('Text', '곱밤'), ('CorrAns', 0), ('Cond', 'nw')])
+12.2360 	DATA 	Keypress: 1
+12.2607 	EXP 	text_show: autoDraw = False
+12.2607 	EXP 	text_show: pos = array([0., 0.])
+12.2607 	EXP 	text_show: text = 'quit'
+12.2607 	EXP 	text_show: autoDraw = True
+12.2740 	DATA 	Keypress: 0
+12.3049 	EXP 	New trial (rep=0, index=8): OrderedDict([('engText', 'goba'), ('Text', '갸교'), ('CorrAns', 0), ('Cond', 'nw')])
+12.3451 	EXP 	text_show: autoDraw = False
+12.3451 	EXP 	text_show: pos = array([0., 0.])
+12.3451 	EXP 	text_show: text = 'goba'
+12.3451 	EXP 	text_show: autoDraw = True
+12.4242 	DATA 	Keypress: 1
+12.4547 	EXP 	New trial (rep=0, index=9): OrderedDict([('engText', 'face'), ('Text', '신청'), ('CorrAns', 1), ('Cond', 'w')])
+12.4939 	EXP 	text_show: autoDraw = False
+12.4939 	EXP 	text_show: pos = array([0., 0.])
+12.4939 	EXP 	text_show: text = 'face'
+12.4939 	EXP 	text_show: autoDraw = True
+12.5077 	DATA 	Keypress: 0
+12.5401 	EXP 	New trial (rep=0, index=10): OrderedDict([('engText', 'test'), ('Text', '증거'), ('CorrAns', 1), ('Cond', 'w')])
+12.5772 	EXP 	text_show: autoDraw = False
+12.5772 	EXP 	text_show: pos = array([0., 0.])
+12.5772 	EXP 	text_show: text = 'test'
+12.5772 	EXP 	text_show: autoDraw = True
+12.6555 	EXP 	New trial (rep=0, index=11): OrderedDict([('engText', 'rest'), ('Text', '휴직'), ('CorrAns', 1), ('Cond', 'w')])
+12.6823 	DATA 	Keypress: 1
+12.6943 	EXP 	text_show: autoDraw = False
+12.6943 	EXP 	text_show: pos = array([0., 0.])
+12.6943 	EXP 	text_show: text = 'rest'
+12.6943 	EXP 	text_show: autoDraw = True
+12.7389 	EXP 	New trial (rep=0, index=12): OrderedDict([('engText', 'geeb'), ('Text', '둔거'), ('CorrAns', 0), ('Cond', 'nw')])
+12.7667 	DATA 	Keypress: 0
+12.7790 	EXP 	text_show: autoDraw = False
+12.7790 	EXP 	text_show: pos = array([0., 0.])
+12.7790 	EXP 	text_show: text = 'geeb'
+12.7790 	EXP 	text_show: autoDraw = True
+12.8548 	EXP 	New trial (rep=0, index=13): OrderedDict([('engText', 'bone'), ('Text', '탁주'), ('CorrAns', 1), ('Cond', 'w')])
+12.8823 	DATA 	Keypress: 1
+12.8947 	EXP 	text_show: autoDraw = False
+12.8947 	EXP 	text_show: pos = array([0., 0.])
+12.8947 	EXP 	text_show: text = 'bone'
+12.8947 	EXP 	text_show: autoDraw = True
+13.0112 	DATA 	Keypress: 0
+13.0280 	EXP 	text_show: autoDraw = False
+13.0280 	EXP 	bye: text = 'You are done!\n\nThank you! Bye !'
+13.0280 	EXP 	bye: autoDraw = True
+13.1064 	DATA 	Keypress: 1
+13.2074 	DATA 	Keypress: 0
+14.2065 	DATA 	Keypress: return
+14.8234 	DATA 	Keypress: space
+14.8453 	EXP 	bye: autoDraw = False
+15.1325 	EXP 	window1: mouseVisible = True

@@ -1,45 +1,38 @@
 # -*- coding: utf-8 -*-
 # Delete the unnecessary parts of this template before publishing the script
 """
-Title of the demo
-Author of the demo: (optionally add affiliation and contact information)
-Date of the last modification: 2013 May 13
-Supported by 
+[Title of experiment]
+[Author Information] 
+[Last Modified : 2019. 3. 24.]
 
-Copyright 2013 [Author(s)]
-Licensed under the MIT License. You may obtain a copy of the License at http://opensource.org/licenses/MIT
+Credit : 
+
+1. Software: 
+
+Peirce, J. W., Gray, J. R., Simpson, S., MacAskill, M. R., Höchenberger, R., Sogo, H., Kastman, E., Lindeløv, J. (2019). PsychoPy2: experiments in behavior made easy. Behavior Research Methods. 10.3758/s13428-018-01193-y
+Peirce, J. W., & MacAskill, M. R. (2018). Building Experiments in PsychoPy. London: Sage.
+Peirce J. W. (2009). Generating stimuli for neuroscience using PsychoPy. Frontiers in Neuroinformatics, 2 (10), 1-8. doi:10.3389/neuro.11.010.2008
+Peirce, J. W. (2007). PsychoPy - Psychophysics software in Python. Journal of Neuroscience Methods, 162 (1-2):8-13 doi:10.1016/j.jneumeth.2006.11.017
+
+2. Template:
+PsychoPy - Psychology software for Python (Release 3.0.6) by Jonathan Pierce, Ph.D. 
+https://www.psychopy.org/PsychoPyManual.pdf
+
+Cognitive Psychology Experiments Demonstrations by Attila Krajcsi, Krisztina Peres, and Gábor Lengyel
+[https://sites.google.com/site/kognitivgyakorlatok/home/fejlesztoknek/ psychopy_demo_template.py]
+Copyright © 2013 Eötvös Loránd Tudományegyetem, Pedagógiai és Pszichológiai Kar, Pszichológiai Intézet, Kognitív Pszichológiai Tanszék
+
+3. Korean Translation & Modified by 
+
+Yoon Kyung Lee, M.A. in Cognitive Psychology
+Seoul National University
+yoonlee78@snu.ac.kr
+
 """
 
-# Imports
+# 모듈 import
 from psychopy import visual, core, event, gui
 import random
-
-# Language specific components
-def _(string):
-    # You should use texts dictionary to strore the strings, and set exp_info['language'] to specify the language
-    return texts[string][exp_info['language']]
-texts = {
-    'instr':
-        {'en':'If the word displayed on the screen is a meaningful English word, press the %s button, otherwise the button %s.',
-        'hu':u'Ha a képernyőn megjelenő szó értelmes magyar szó, akkor nyomd meg a %s gombot, egyébként pedig a %s gombot.'},
-    'words':
-        {'en':['cat', 'dog', 'hunfert'],
-        'hu':['kutya', 'macska', u'gyilmók']},
-}
-# List of available language: texts.values()[0].keys()
-# Get a specific item example: _(‘instr’)
-
-exp_info = {'participant':'participant_ID',
-    'language': texts.values()[0].keys()} # default parameters of the experiment
-
-# Setting some parameters on GUI
-dlg = gui.DlgFromDict(exp_info, title='exp_title',
-   order = ['participant', 'language'],
-    tip = {'participant':'Identifier of the participant.',
-        'language':'Language of the instructions.',})
-if not dlg.OK:
-    print 'User Cancelled'
-    core.quit()
 
 # Stimuli
 stims = ['a', 'b', 'c']
