@@ -1,5 +1,5 @@
 ### 1. PsychoPy 3.0 Ver. (python 3.5 and above)
-(as of 2018, PsychoPy 3.0.ver. is avaiable. 
+(as of 2018, PsychoPy 3.0.ver. is available).= 
 
 1. 설치 화면 (Anaconda) : psychopy_install.ipynb
     Anaconda 환경 설정은 아래 참조 
@@ -34,6 +34,7 @@ _4) import + window만들어서 확인해보기 (<- 다음 회차에서)_
 (참고*) 두 가지 방법이 있습니다. 하나는 
   
   1) 아나콘다 네비게이터 > 왼쪽 코너 탭에서 **"Environments"** ("Home" 밑에 위치) > "Create" > Name에는 환경 이름 지정해주세요. <br>
+  
   저는 우선 "PsychoPy"라고 지을게요. Packages 선택에는 Python 2.7로 해주세요. (3.0.ver을 쓰고 싶은 경우, Setup 폴더의 psychopy_install.ipynb에 나와있는 대로 하면 됩니다). 
   
   또는 
@@ -92,5 +93,5 @@ conda install jupyter notebook
 
 설치 확인은 바로 activate을 해보거나 safe하게 conda info --envs로 체크!
 
------ 환경 구축은 여기까지 입니다. 이제 주피터 노트북으로 들어가서 방금 설치한 psychopy 라이브러리와 그 외 필요한 라이브러리를 불러오는 작업을 할 것입니다(_import_) (다음 회차에서 계속) ---- 
+----- 환경 구축은 여기까지 입니다. 이제 주피터 노트북으로 들어가서 방금 설치한 psychopy 라이브러리와 그 외 필요한 라이브러리를 불러오는 작업이 가능합니다(_import_)---- 
 
