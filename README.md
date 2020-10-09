@@ -3,7 +3,7 @@
 
 디렉토리: 
 - Setup : 설치 방법 관련 노트북(.ipynb) 파일
-- practice : 실습 예제
+- practice : 실습 예제(스터디)
 
 배경: 
 
@@ -15,7 +15,9 @@
 
 심리학의 연구 주제가 다양한 만큼 PsychoPy로 모든 심리학 실험을 구현할 수는 없지만 (예를 들어, VR 연구 같이 3D 시뮬레이션이 필요할 경우, MATLAB이나 Unity같은 게임 개발 도구가 더 맞을 수 있습니다), 파이썬을 처음 접하는 입문자이거나 간단한 자극만을 필요로하는 실험 과제를 만들고자하는 (실험심리) 연구자에게는 적절한 도구라고 생각합니다. 
 
-이 레퍼지토리에 올리는 자료들은 저 혼자 그때마다 커밋하거나 저희 랩([인간공학심리 연구실](snuhahnlab@gmail.com))안에서 또는 외부 활동/스터디 (feat. [싸이그래머](https://www.facebook.com/groups/psygrammer/))에서 공부한 자료들을 모아서 정리한 걸 공유한 것입니다. 질문 환영합니다. 
+** 이 레퍼지토리에 올리는 자료들은 연구실(hfpsych.snu.ac.kr)에서 또는 외부 활동/스터디 (feat. [싸이그래머](https://www.facebook.com/groups/psygrammer/))에서 공부한 자료들의 요약입니다. 
+
+**PsychoPy가 온라인 플랫폼 (Pavolvia)으로 전환됨에 따라, 오픈 소스 업데이트가 이전 만큼 활발하지 않습니다. 더 이상 이 깃헙에서는 업데이트되지 않습니다. 
 
 아래는 도움이 될만한 참고 링크입니다: 
 
@@ -25,5 +27,5 @@
 Best,
 
 Yoon Kyung Lee, <br>
-Ph.D. Program in Cognitive Psychology, <br>
+Ph.D. Candidate in Cognitive Psychology, <br>
 SNU <br>
